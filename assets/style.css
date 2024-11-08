@@ -70,20 +70,45 @@ form button:hover {
   background: var(--primary-color-darker);
 }
 
-.rodape{
-    color: #fff;
-    text-align: center;
-  }
+.paragrafo-resultado, .bad{
+  background: #4ee153;
+  padding: 10px 20px;
+}
 
+.bad{
+  background: #f57c7c;
+}
+
+
+
+.rodape {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 1em;
+  text-align: center;
+}
 
 @media screen and (min-width: 299px) and (max-width: 588px){
 
+    body{
+      font-size: 0.6em;
+    }
+
     .resultado{
-        margin: 0%;
+        display: inline-block;
+        
     }
 
     form input, form label, form button {
-        display: block;
+        display: inline-block;
         width: 100%;
         margin-bottom: 10px;
       }
